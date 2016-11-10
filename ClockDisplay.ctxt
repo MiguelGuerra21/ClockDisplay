@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ClockDisplay()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ ClockDisplay\r\n
+comment1.params=h\ min
+comment1.target=void\ setHour(int,\ int)
+comment1.text=\r\n\r\n
+comment2.params=
+comment2.target=void\ avanzarHora()
+comment2.text=\r\n\ \r\n
+comment3.params=
+comment3.target=java.lang.String\ getHour()
+comment3.text=\r\n\ Permita\ devolver\ una\ cadena\ de\ 5\ caracteres\ consistente\ en\ la\ hora\ y\ los\ minutos\ separados\ por\ dos\ puntos.\ Ojo\:\ la\ cadena\ siempre\ debe\ tener\ 5\ caracteres.\r\n
+numComments=4
