@@ -8,8 +8,8 @@
 public class ClockDisplay
 {
     // instance variables - replace the example below with your own
-    private DisplayDosDigitos hora;
-    private DisplayDosDigitos minutos;
+    private NumberDisplay hora;
+    private NumberDisplay minutos;
 
     /**
      * Constructor for objects of class ClockDisplay
@@ -17,8 +17,8 @@ public class ClockDisplay
     public ClockDisplay()
     {
         // initialise instance variables
-        hora = new DisplayDosDigitos(24);
-        minutos = new DisplayDosDigitos(60);
+        hora = new NumberDisplay(24);
+        minutos = new NumberDisplay(60);
     }
 
     /**
@@ -27,8 +27,8 @@ public class ClockDisplay
     public void setHour(int h, int min)
     {
         
-        hora.setValor(h);
-        minutos.setValor(min);
+        hora.setValue(h);
+        minutos.setValue(min);
         
     }
     /**
@@ -36,16 +36,17 @@ public class ClockDisplay
      */
     public void avanzarHora()
     {
-        minutos.incrementaValor();
-            if(minutos.getValor() == 1)
-            hora.incrementaValor();
+        minutos.increment();
+            if(minutos.getValue() == 0)
+            hora.increment();
+             
     }
     /**
      * Permita devolver una cadena de 5 caracteres consistente en la hora y los minutos separados por dos puntos. Ojo: la cadena siempre debe tener 5 caracteres.
      */
     public String getHour()
     {
-        return hora.getValor() + ":" + minutos.getValor();
+        return hora.getValue() + ":" + minutos.getValue();
         
     }
 }
