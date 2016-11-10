@@ -46,7 +46,7 @@ public class ClockDisplay
      */
     public String getHour()
     {
-        return hora.getValue() + ":" + minutos.getValue();
+        return hora.getDisplayValue() + ":" + minutos.getDisplayValue();
         
     }
 }
